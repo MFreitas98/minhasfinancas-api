@@ -32,12 +32,13 @@ public class Lancamento {
     @Column(name = "ano")
     private Integer ano;
 
+    @Column(name = "mes")
+    private Integer mes;
+
     @ManyToOne
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
 
-    @Column(name = "mes")
-    private Integer mes;
 
     @Column(name = "valor")
     private BigDecimal valor;
